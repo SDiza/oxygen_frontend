@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FORMS</title>
+    <script>
+        function sizePic() {
+            size = document.getElementById("size").value;
+            img = document.getElementById("pic");
+            img.width = 80 + 40 * size;
+        }
+    </script>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Название формы</legend>
+        <table>
+            <tr>
+                <th>
+                    <form>
+                        <p>Поле со списком <select name="select" size="1">
+                            <option selected value="s1">Вариант 1</option>
+                            <option selected value="s2">Вариант 2</option>
+                            <option selected value="s3">Вариант 3</option>
+                            <option selected value="s4">Вариант 4</option>
+                            <option selected value="s5">Вариант 5</option>
+                        </select></p>
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <p>Поиск <input type="search" name="q" placeholder="поиск по сайту"></p>
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <p><input type="number" value="24" step="1"></p>
+                    </form>
+                </th>
+                <th rowspan="2">
+                    <form>
+                        <p><input type="range" id="size" min="1" max="10" oninput="sizePic()" value="5"></p>
+                        <p><img src="images/thanos_js.jpg" id="pic" width="50%" height="50%"></p>
+                    </form>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <form>
+                        <p>Поле со списком <select name="select" size="5">
+                            <option selected value="s1">Вариант 1</option>
+                            <option selected value="s2">Вариант 2</option>
+                            <option selected value="s3">Вариант 3</option>
+                            <option selected value="s4">Вариант 4</option>
+                            <option selected value="s5">Вариант 5</option>
+                        </select></p>
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        Многострочный текст
+                        <textarea>
+                      </textarea>
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <p><input type="radio" name="radio">Radio Button</p>
+                        <p><input type="radio" name="radio">Radio Button</p>
+                        <p><input type="radio" name="radio">Radio Button</p>
+                        <p><input type="radio" name="radio">Radio Button</p>
+                    </form>
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <form>
+                        <p>Цвет <input type="color" name="bg" value="red">
+                            <input type="submit" value="Выбрать"></p>
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <p><input type="file"></p>
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <p><input type="submit"></p>
+                    </form>
+                </th>
+                <th>
+                    <form>
+                        <p><input type="reset" value="Очистить"></p>
+                    </form>
+                </th>
+            </tr>
+            <tr>
+                <th colspan="4">
+                    <form>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deleniti dignissimos
+                            dolorum ducimus ex fuga illum, impedit nulla perspiciatis quasi. At dicta doloribus, facilis
+                            illum labore nisi perspiciatis similique velit!</p>
+                    </form>
+                </th>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>
