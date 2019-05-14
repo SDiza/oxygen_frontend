@@ -1,3 +1,35 @@
 input:active {
     background-color: black;
 }
+
+a:link {
+    color: #1bdc11;
+}
+a:visited {
+    color: #000000;
+ }
+.text:focus {
+     color: darkorange;
+ }
+.checkbox:hover {
+     cursor: none;
+ }
+.checkbox input:hover {
+    cursor: none;
+}
+li:first-child {
+    color: aqua;
+}
+li:last-child {
+    color: blueviolet;
+}
+
+q:lang(de) {
+    quotes: "\201E" "\201C"; /* Вид кавычек для немецкого языка */
+}
+q:lang(en) {
+    quotes: "\201C" "\201D"; /* Вид кавычек для английского языка */
+}
+q:lang(fr), q:lang(ru) { /* Вид кавычек для русского и французского языка */
+    quotes: "\00AB" "\00BB";
+}
