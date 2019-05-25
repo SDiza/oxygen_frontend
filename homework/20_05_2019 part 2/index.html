@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function sizePic() {
+            size = document.getElementById("size").value;
+            img = document.getElementById("pic");
+            img.width = 80 + 40 * size;
+        }
+    </script>
+</head>
+<body>
+<main>
+    <div class="container">
+        <div class="form">
+            <p>Поле со списком</p>
+        </div>
+        <div class="form">
+            <select name="select" size="1">
+                <option selected value="s1">Вариант 1</option>
+                <option selected value="s2">Вариант 2</option>
+                <option selected value="s3">Вариант 3</option>
+                <option selected value="s4">Вариант 4</option>
+                <option selected value="s5">Вариант 5</option>
+            </select>
+        </div>
+        <div class="form">Поиск</div>
+        <div class="form">
+            <input type="search" name="q" placeholder="поиск по сайту">
+        </div>
+        <div class="form">
+            <input type="number" value="24" step="1">
+        </div>
+        <div class="form">
+            <input type="range" id="size" min="1" max="10" oninput="sizePic()" value="5">
+        </div>
+        <div class="form">
+            <p>Поле со списком</p>
+        </div>
+        <div class="form">
+            <select name="select" size="5">
+                <option selected value="s1">Вариант 1</option>
+                <option selected value="s2">Вариант 2</option>
+                <option selected value="s3">Вариант 3</option>
+                <option selected value="s4">Вариант 4</option>
+                <option selected value="s5">Вариант 5</option>
+            </select>
+        </div>
+        <div class="form"
+        <p>Многострочный текст</p>
+    </div>
+    <div class="form">
+            <textarea>
+            </textarea>
+    </div>
+    <div class="form">
+        <p><input type="radio" name="radio">Radio Button</p>
+        <p><input type="radio" name="radio">Radio Button</p>
+        <p><input type="radio" name="radio">Radio Button</p>
+        <p><input type="radio" name="radio">Radio Button</p>
+    </div>
+    <div class="form">
+        <img src="images/thanos_js.jpg" id="pic" width="100%">
+    </div>
+    <div class="form">Цвет</div>
+    <div class="form">
+        <input type="color" name="bg" value="red">
+        <input type="submit" value="Выбрать">
+    </div>
+    <div class="file">
+        <input type="file">
+    </div>
+    <div class="form">
+        <input type="submit">
+    </div>
+    <div class="form">
+        <input type="reset" value="Очистить">
+    </div>
+    <div class="footer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at cupiditate, dignissimos doloremque
+            eaque eius et maiores nobis non perferendis quibusdam ratione repudiandae voluptatibus! Aspernatur commodi
+            cum ducimus iste iusto?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at cupiditate,
+            dignissimos doloremque
+            eaque eius et maiores nobis non perferendis quibusdam ratione repudiandae voluptatibus! Aspernatur commodi
+            cum ducimus iste iusto?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at cupiditate,
+            dignissimos doloremque
+            eaque eius et maiores nobis non perferendis quibusdam ratione repudiandae voluptatibus! Aspernatur commodi
+            cum ducimus iste iusto?</p>
+    </div>
+    </div>
+</main>
+</body>
+</html>

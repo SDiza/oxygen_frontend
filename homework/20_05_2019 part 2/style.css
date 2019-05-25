@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    text-align: center;
+    display: inline-block;
+}
+.container::after {
+    display: block;
+    content: '.';
+    height: 0;
+}
+.form {
+    width: 16%;
+    height: 200px;
+    float: left;
+    border: solid green;
+}
+.footer{
+    clear: both;
+}
+.file {
+    float: left;
+    width: 32%;
+    height: 200px;
+    border: solid green;
+}
