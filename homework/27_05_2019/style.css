@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+.rhombus {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: aqua;
+    transform: rotate(35deg);
+}
+
+.rhombus:hover{
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    transform: rotate(-120deg);
+    animation-iteration-count: infinite;
+    animation-name: rotate;
+    animation-duration: 5.5s;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: linear;
+    }
+
+    100% {
+        transform: rotate(-360deg);
+        animation-timing-function: linear;
+    }
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.circle:hover {
+    transform: rotate(360deg);
+    animation-iteration-count: infinite;
+    animation-name: circle;
+    animation-duration: 5.5s;
+}
+
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: linear;
+    }
+    50% {
+        transform: rotate(180deg);
+        animation-timing-function: linear;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        animation-timing-function: linear;
+    }
+}
+
