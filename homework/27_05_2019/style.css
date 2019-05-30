@@ -3,33 +3,91 @@
 }
 .box{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 25%;
+    left: 25%;
     width: 300px;
     height: 300px;
     margin: auto;
 }
-.rhombus {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color: aqua;
-    transform: rotate(35deg);
-}
-
-.rhombus:hover{
-    content: '';
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    transform: rotate(-120deg);
+.circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    transform-origin: 50% 250% 0;
+    content: "";
+    transform: rotate(360deg);
     animation-iteration-count: infinite;
-    animation-name: rotate;
-    animation-duration: 5.5s;
+    animation-name: rotate_circle;
+    animation-duration: 5s;
 
 }
 
-@keyframes rotate {
+.circle > div {
+    position: absolute;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform-origin: 50% 250% 0;
+}
+
+.circle1 {
+    background-color: black;
+    transform: rotate(45deg);
+}
+.circle2 {
+    background-color: black;
+    transform: rotate(90deg);
+}
+.circle3 {
+    background-color: black;
+    transform: rotate(135deg);
+}
+.circle4 {
+    background-color: black;
+    transform: rotate(180deg);
+}
+.circle5 {
+    background-color: black;
+    transform: rotate(225deg);
+}
+.circle6 {
+    background-color: black;
+    transform: rotate(270deg);
+}
+.circle7 {
+    background-color: black;
+    transform: rotate(315deg);
+}
+.circle8 {
+    background-color: black;
+    transform: rotate(360deg);
+}
+
+.rhombus {
+    width: 50px;
+    height: 50px;
+    transform-origin: 50%  50%;
+    background-color: aqua;
+    margin: 50px auto;
+    content: "";
+    transform: rotate(-360deg);
+    animation-iteration-count: infinite;
+    animation-name: rotate_rhombus;
+    animation-duration: 5s;
+}
+
+.circle {
+    content: "";
+    transform: rotate(360deg);
+    animation-iteration-count: infinite;
+    animation-name: rotate_circle;
+    animation-duration: 5s;
+}
+
+@keyframes rotate_rhombus {
     0% {
         transform: rotate(0deg);
         animation-timing-function: linear;
@@ -40,29 +98,9 @@
         animation-timing-function: linear;
     }
 }
-
-.circle {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    border-radius: 50%;
-}
-
-.circle:hover {
-    transform: rotate(360deg);
-    animation-iteration-count: infinite;
-    animation-name: circle;
-    animation-duration: 5.5s;
-}
-
-
-@keyframes circle {
+@keyframes rotate_circle {
     0% {
         transform: rotate(0deg);
-        animation-timing-function: linear;
-    }
-    50% {
-        transform: rotate(180deg);
         animation-timing-function: linear;
     }
 
@@ -71,4 +109,3 @@
         animation-timing-function: linear;
     }
 }
-
