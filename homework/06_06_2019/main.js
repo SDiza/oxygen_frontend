@@ -1,4 +1,4 @@
-function task1() {
+function askJS() {
     var js = prompt("Какое официальное название JavaScript?");
     if (js == "ECMAScript"){
         alert("Верно!");
@@ -7,8 +7,8 @@ function task1() {
     }
 }
 
-function task2() {
-    var num = prompt("Введите число!");
+function checkNumbers() {
+    var num = +prompt("Введите число!");
     if (num > 0){
         alert(1);
     } else if (num < 0) {
@@ -19,7 +19,7 @@ function task2() {
 
 }
 
-function task3() {
+function logIn() {
     var login = prompt("Кто пришел?");
     if (login == "Админ"){
         var pass = prompt("Пароль?");
@@ -39,6 +39,10 @@ function task3() {
 
 }
 
-function f() {
-    
+function showMessage() {
+        login = prompt('Введите логин');
+        var message = (login == 'Вася') ? 'Привет':
+            (login == 'Директор')? 'Зравствуйте' :
+                (login == '') ? 'нет логина': '';
+        alert(message);
 }
