@@ -20,11 +20,10 @@ function fromForToWhile() {
 function inputMoreHundredNum() {
     var num = 0;
 
-    while (num < 100) {
-        num = +prompt("Введите число, которое > 100");
-        if (num == false) alert("Отмена");
-        break;
-    } alert("Конец");
+    do {
+        num = prompt("Введите число, которое > 100");
+    } while (num <= 100 && num != null);
+    alert ("Конец");
 }
 
 function simpleNumbers(){
